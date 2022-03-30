@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.link{
+    text-decoration: none;
+    color: crimson;
+    font-weight: 100;
+    font-size: 30px;
+    margin-left: 20px;
+    
+} 
+
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#About{
+   background-image:url(./img/IMG-20211022-WA0070.jpg) ; 
+   background-size: cover;
+   background-position: top center;
+   position: relative;
+   z-index: 1;
+   border-bottom: 3px solid black;
+}
+#About::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(35, 41, 41);
+    opacity: .6;
+    z-index: -1;
+}
+#About .About{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+    
+}
+#About h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color:transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s ;
+}
+#About h1:nth-child(1){
+    animation-delay: 1s;
+}
+#About h1:nth-child(2){
+    animation-delay: 2s;
+}
+#About h1:nth-child(3){
+    animation: text_reveal_name.5s ease forwards;
+    animation-delay: 3s;
+}
+#About h1 span{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+#About h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#About h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#About h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+#About .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#About .cta:hover{
+    color: white;
+    background-color: crimson;
+}
+/*end about*/
+
+/*story section*/
+#story .story{
+flex-direction: column;
+text-align: center;
+max-width: 1500px;
+margin: 0 auto;
+padding: 100px 0;
+border-bottom: 3px solid crimson;
+}
+#story .section-title{
+    font-size: 6rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#story .section-title span{
+    color: crimson;
+}
+
+#story .story-top p{
+    font-size: 2rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+}
+#story .story-bottom{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#story .photo{
+    margin: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+}
+
+/*end story section*/
+
+/*qr*/
+
+#qr .section-title{
+    font-size: 6rem;
+    font-weight: 300;
+    color: black;
+    padding:20px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;  
+
+}
+#qr .qrcontainer{
+    border-bottom: 3px solid black;
+    padding:20px;
+    text-align: center;  
+}
+#qr .section-title span{
+    color: crimson;
+}
+#qr .title{
+    font-size: 3rem;
+    font-weight: 300;
+    color: black;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-decoration: underline 1.5px;
+    
+}
+#qr .title span{
+    color: crimson;
+}
+#qr .QRCODE{
+    width: 400px;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    
+}
+#like .liketitle{
+    font-size: 6rem;
+    font-weight: 300;
+    color: black;
+    padding:30px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#like .liketitle span{
+    color:crimson;
+}
+.likebut{
+    text-align: center;
+    padding-top: 40px;
+    border-bottom: 3px solid crimson ; padding-bottom: 25px;
+
+}
+#like .support{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    color: black;
+
+}
+/*q&A*/
+#qa .title{
+    font-size: 6rem;
+    font-weight: 300;
+    color: black;
+    padding:30px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#qa .title span{
+    color: crimson;
+}
+#qa .q1{
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+    margin-left: 20px;
+    text-decoration: bold;
+
+}
+
+body{
+    
+    background: #f6f6f6;
+ }
+
+ .box{
+    width: 355px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+ }
+ 
+ .box .heading{
+    background: crimson;
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    
+ }
+ 
+ .faqs{
+    padding: 0px 20px 20px;
+    
+ }
+ 
+ ::-webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+ }
+ 
+ details{
+    background: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: "Rubik";
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+ }
+ 
+ details summary{
+    outline: none;
+ }
+ #qa .text{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     text-align: center;
+ }
+ #qa .sumy{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ #qa{
+    border-bottom: 3px solid black;
+ }
+ /*youtube*/
+ #myplaylist .title{
+    font-size: 6rem;
+    font-weight: 300;
+    color: black;
+    padding:30px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#myplaylist .title span{
+    color: crimson;
+
+}
+#myplaylist .you{
+    
+    margin-left: 535px ;
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    
+
+}
+ #myplaylist{
+    border-bottom: 3px solid crimson;
+    padding: 70px;
+    margin-bottom: 100px;
+ }
+ /*contect info*/
+#contact .title{
+    font-size: 6rem;
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#contact .title span{
+    color: crimson;
+
+}
+ #contact .container{
+     width : 80%;
+     height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: crimson;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px; 
+    margin-left: 300px;
+
+}
+#contact form .title{
+    color: black;
+    font-weight:350;
+    margin-bottom: 20px;
+
+}
+form input , form textarea {
+border:0;
+margin: 10px 0;
+ padding: 20px;
+ outline: none;
+ background: #f5f5f5 ;   
+ font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form button{
+    padding: 15px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+
+}
+
+
+/*key frames*/
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: crimson;
+        font-weight: 500;
+    }
+}
